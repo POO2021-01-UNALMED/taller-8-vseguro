@@ -16,15 +16,6 @@ public class Jugador extends Futbolista {
 	}
 
 	@Override
-	public int compareTo(Futbolista f) {
-	    /*if (this.compareTo(f)==0) {
-	    	return this.getEdad();
-	    }
-	    else if(this.compareTo(f)<0){
-	    	return f.getEdad()- this.getEdad();
-	    }*/
-	    return this.getEdad()-f.getEdad();
-	}
 	
 	public boolean jugarConLasManos() {
 		return false;
@@ -34,10 +25,20 @@ public class Jugador extends Futbolista {
 		// TODO Auto-generated method stub
 		return 0;
 	}
+	public int compareTo(Futbolista f) {
+	    /*if (this.compareTo(f)==0) {
+	    	return this.getEdad();
+	    }
+	    else if(this.compareTo(f)<0){
+	    	return f.getEdad()- this.getEdad();
+	    }*/
+		int x = this.getEdad()-f.getEdad();
+	    return Math.abs(x);
+	}
 	
 	public String toString() {
-		return "El futbolista" + getNombre() + "tiene" + getEdad() + "y juega de posición" +
-	    getPosicion() + "con el dorsal" + dorsal + ". Ha marcado" + golesMarcados;
+		return "El futbolista " + getNombre() + " tiene " + getEdad() + ", y juega de" +
+	    getPosicion() + " con el dorsal " + dorsal + ". Ha marcado " + golesMarcados;
 	}
 
 }
