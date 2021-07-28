@@ -26,18 +26,12 @@ public class Jugador extends Futbolista {
 		return 0;
 	}
 	public int compareTo(Futbolista f) {
-	    /*if (this.compareTo(f)==0) {
-	    	return this.getEdad();
-	    }
-	    else if(this.compareTo(f)<0){
-	    	return f.getEdad()- this.getEdad();
-	    }*/
-		int x = this.getEdad()-f.getEdad();
+		int x = this.getEdad() - f.getEdad();
 	    return Math.abs(x);
 	}
 	
 	public String toString() {
-		return "El futbolista " + getNombre() + " tiene " + getEdad() + ", y juega de" +
+		return "El futbolista " + getNombre() + " tiene " + getEdad() + ", y juega de " +
 	    getPosicion() + " con el dorsal " + dorsal + ". Ha marcado " + golesMarcados;
 	}
 
