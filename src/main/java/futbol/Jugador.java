@@ -20,12 +20,9 @@ public class Jugador extends Futbolista {
 	public boolean jugarConLasManos() {
 		return false;
 	}
-	@Override
-	public int compareTo(Object o) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-	public int compareTo(Futbolista f) {
+	
+	
+	public int compareTo(Jugador f) {
 		int x = this.getEdad() - f.getEdad();
 	    return Math.abs(x);
 	}

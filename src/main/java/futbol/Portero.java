@@ -22,10 +22,6 @@ public class Portero extends Futbolista {
 		int x= this.golesRecibidos - ((Portero)f).golesRecibidos;
 		return  Math.abs(x);
 	}
-	@Override
-	public int compareTo(Object o) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+	
 
 }

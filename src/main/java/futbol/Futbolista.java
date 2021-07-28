@@ -19,7 +19,7 @@ public class Futbolista implements Comparable {
 	}
 	
 	public boolean equals(Futbolista f) {////////////////REVISAR
-		if (this.compareTo(f)==0) {
+		if (this.edad == f.getEdad() && this.nombre.equals(f.getNombre()) && this.posicion.equals(f.getPosicion())) {
 			return true;
 		}
 		return false;
@@ -46,6 +46,11 @@ public class Futbolista implements Comparable {
 	}
 	public String getPosicion() {
 		return posicion;
+	}
+
+	public int compareTo(Futbolista f) {
+		int x = this.edad - f.getEdad();
+		return x;
 	}
 
 	@Override
