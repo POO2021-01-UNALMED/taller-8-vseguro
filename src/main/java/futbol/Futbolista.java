@@ -18,13 +18,13 @@ public class Futbolista implements Comparable {
 		return "El futbolista " + nombre + " tiene " + edad + ", y juega de " + posicion;
 	}
 	
-	public boolean equals(Futbolista f) {////////////////REVISAR
+	/*public boolean equals(Futbolista f) {////////////////REVISAR
 		if (this.edad == f.getEdad() && this.nombre.equals(f.getNombre()) && this.posicion.equals(f.getPosicion())) {
 			return true;
 		}
-		return false;
+		else {return false;}
 	}
-	
+	*/
 	public boolean jugarConLasManos() {
 		if (this instanceof Portero) {
 			return true;

@@ -12,8 +12,8 @@ public class imprimir {
 		System.out.println(f);
 		Futbolista  f2 = new Futbolista();
 		Futbolista f3 = f2;
+		System.out.println(f.equals(f2));
 		System.out.println(f.equals(f3));
-		System.out.println(f2.equals(f3));
 		//Jugador f = new Jugador("Valeria", 21, "defensa", (short) 4, (byte) 8);
 		/*Jugador f = new Jugador();
 		System.out.println(f.getEdad());
